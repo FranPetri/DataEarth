@@ -1,0 +1,104 @@
+/* TIPOGRAFIAS	 */
+@font-face {
+    font-family: "Tango";
+    src: url("../../resources/txt/tango/TangoSans.ttf");
+}
+.tango{
+	font-family: "Tango";
+}
+/*------COLORES---------*/		
+.back_blue{
+    background-color:#344D67;
+}
+.back_blue2{
+    background-color: #4a5663;
+}   
+.color_blue{
+    color:#344D67;
+}
+.color_tea{
+    color:#6ECCAF;
+}
+.color_green{
+    color:#ADE792;
+}
+.color_yellow{
+    color: #F3ECB0;
+}
+.color_white{
+    color: white;
+}
+/* Ordenamiento */
+.dflex{
+	display:flex;
+}
+.fdir_row{
+	flex-direction:row;	
+}
+.fdir_col{
+	flex-direction:column;	
+}
+.jc_sa{
+	justify-content:space-around;
+}
+.jc_sb{
+	justify-content:space-between;
+}
+.jc_c{
+	justify-content:center;
+}
+.align_i_c{
+	align-items: center;
+}
+/* Design General */
+.contenedor__404{
+	max-width: auto;
+	height: 820px;
+}
+.mensaje__404{
+	font-size: 231px;
+	z-index: 1;
+	position :static;
+}
+
+.logo__transparent{
+	width: 450px;
+	height: 450px;
+	opacity: 50%;
+	position:absolute;
+	z-index: 0;
+	
+}
+.mensajes_error{
+	z-index: 1;
+	padding-top:10px;
+
+}
+.mensaje__error{	
+	z-index:1;
+	font-size: 60px;
+	position : relative;
+	bottom: 15%;
+
+}	
+.mensaje__vuelta{
+	font-size: 25px;
+	z-index: 1;
+	text-align: center;
+}
+.contenedor_links{
+	width: 100px;
+	height: 40px;
+	z-index: 1;
+	max-width: 200px;
+}
+.link__panel{
+	width: 100px;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 667px){
+	.fs190{
+		font-size: 190px;
+	}
+}

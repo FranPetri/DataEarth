@@ -1,0 +1,41 @@
+<div class="back_blue2 w100p pd15 dpsgreen tango dflex fdr fdc">
+	<div class="back_green w100p ">
+		<!-- Banner y Avatar -->
+		<div class="w100p h300"><img class="banner" src="resources/img/plants/aloevera.jpg" alt=""></div>
+		<div class=""><img class="avatar pab w80 h80 tp100 l30" src="resources/img/logo/logo.svg" alt=""></div>
+		<div class="m40"></div>
+		<div class="pdsides dflex jcspb">
+			<div id="user_name" class="tango fs30 color_blue2">{{user_name}}</div>
+			<a href="/editar" class="tango fs20 color_yellow bornone back_blue2 pd5 br3 txtdeco">Editar Pefil</a>
+		</div>
+		<div class="pdsides">
+		</div>
+		<hr class="m15">
+		<div class="dflex w100p bxtop ovh">
+			<div id="publis" class="h100p dflex fxw jcc">
+
+				<template id="publi">
+					<div class="container_publi ovh pr m15">
+						<div class="icon_info tango"></div>
+						<img class="img_publi h100p w100p" src="aaaaa" alt="">
+						<div class="container_info">
+							<div class="content back_blue2 color_yellow tango fs20 textorientcent"></div>
+							<div class="fecha back_blue2 color_yellow tango fs20 textorientcent pd15 br10"></div>
+							
+							<button onclick="windowEditPubli()" class="btn-edit tango fs30 back_none color_yellow bornone pd5 br3 m15"><i class="fa-solid fa-pen-to-square" style="color: #6ECCAF; margin:10px;"></i></button>
+							{{windowEditPubli}}
+						</div> 
+					</div>
+				</template>		
+				
+				<div class="hidden">
+					<div class="pd15">
+						<button onclick="windowPubli()" class="btn-add back_yellow tommy_medium color_blue2 bornone pd5 br3">AÑADIR PUBLICACION</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>	
+{{windowPubli}}

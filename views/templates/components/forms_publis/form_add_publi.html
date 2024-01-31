@@ -1,0 +1,13 @@
+<label class="tango color_blue fs30 tac">Agregar Publicación</label>
+<form method="POST" class="dflex fdc jcl" enctype="multipart/form-data">
+	<label class="m5 tango color_blue fs20 tal">Titulo: </label>
+	<input class="tango m5 bornone back_yellow pd5" type="text" maxlength="10" name="title_publi" placeholder="Max. 10 Caracteres">
+	
+	<label class="m5 tango color_blue fs20 tal">Imagen: </label>
+	<input class="m5" type="file" name="image_publi">
+
+	<label class="m5 tango color_blue fs20">Comentario: </label>
+	<textarea class="tango m5 bornone back_yellow" name="content_publi" cols="20" rows="5" maxlength="40" placeholder="Max. 40 Caracteres" style="resize: none"></textarea>
+	
+	<input class="m15 bornone color_yellow back_blue pd5 fs20 tango br3" type="submit" name="btnPubli" value="Aceptar">
+</form>

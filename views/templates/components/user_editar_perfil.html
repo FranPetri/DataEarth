@@ -1,0 +1,32 @@
+<div class="back_blue2 h100p w100p pd15 dpsgreen tango dflex fdr fdc mb80">
+	<div class="back_green w100p h100p">
+		<!-- Banner y Avatar -->
+		<div class="w100p h300"><img class="banner" src="resources/img/plants/aloevera.jpg" alt=""></div>
+		<div class=""><img class="avatar pab w80 tp100 l30" src="resources/img/logo/logo.svg" alt=""></div>
+		<div class="m40"></div>
+		<div class="pdsides dflex">
+			<div id="user_name" class="tango fs30 color_blue2">{{user_name}}</div>
+		</div>
+		<div class="pdsides">
+		</div>
+		<hr class="m15">
+		<button onclick="windowDeleteUser()" class="btn_delete tango back_blue bornone">Eliminar Usuario</button>
+
+		<form method="POST" class="pd15 dflex fdc" enctype="multipart/form-data">
+			<label class="tommy_medium color_blue2 fs20 m5">Apodo: </label>
+			<input type="text" class="tango back_blue2 color_yellow bornone br10 pd15 w30p w80ps" name="apodo_edit" placeholder="Apodo">
+
+			<label class="tommy_medium color_blue2 fs20 m5">Avatar: </label>
+			<input type="file" class="tango back_blue2 color_yellow bornone br10 pd15 w30p w80ps" name="avatar_edit">
+
+			<label class="tommy_medium color_blue2 fs20 m5">Portada: </label>
+			<input type="file" class="tango back_blue2 color_yellow bornone br10 pd15 w30p w80ps" name="banner_edit">
+
+			<input type="submit" class="btn_edit" name="btnEdit" value="Aceptar">
+			<input type="submit" class="btn_cancel" name="btnCancel" value="Cancelar">
+		</form>
+		</div>
+		<div id="alert_check" class="alert back_red color_yellow br3">{{alert}}</div>
+	</div>
+</div>	
+{{windowDelete}}

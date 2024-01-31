@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataEarth | Login</title>
+	<link rel="stylesheet" href="views/style/index.css">
+	<link rel="icon" href="resources/img/logo/logo.svg">
+</head>
+<body class="back_blue">
+	<div class="dflex fdc">
+		<div class="z5"><img class="w100vw pab tp10 z0" src="resources/img/wave.svg" alt=""></div>
+		<div class="w100vw dflex jcc aic fdc z5 pd20">
+			
+			<div class="dpsgreen back_blue2 ws30vw w80vw br10 dflex fdc aic pd20">
+				<img class="h150" src="resources/img/logo/logo.svg" alt="">
+				<h2 class="tommy_medium color_yellow fss30 fs30 pd20 w100vw tac">Iniciar Sesion</h2>
+				<form method="post" class="dflex fdc aic w100vw">
+					<label class="fs20 tommy_medium color_green dflex jcl w80p">Usuario: </label>
+					<input type="text" class="w80p m10 pd10 br10 bornone back_green tango fs20 tac color_blue" name="user" placeholder="Usuario" required>
+					<label class="fs20 tommy_medium color_green dflex jcl w80p">Contraseña: </label>
+					<input type="password" class="w80p m10 pd10 br10 bornone back_green tango fs20 tac color_blue" name="pass" placeholder="Contraseña" required>
+					<a href="/recuperar" class="tommy_medium color_green txtdecnone">¿Olvidaste tu contraseña?</a>
+					<input class="bornone pd20 tango fss25 fs30 br10 m10 back_blue color_yellow" type="submit" name="btnAccept" value="Aceptar">
+				</form>
+				<h3 class="back_red tango br3 color_yellow">
+					{{alert}}
+				</h3>
+			</div>
+		</div>	
+		{{footer}}
+	</div>
+</body>
+</html>

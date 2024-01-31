@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="views/style/comunidad.css">
+	<title>DataEarth | Comunidad</title>
+	<link rel="icon" href="resources/img/logo/logo.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="back_blue">
+		{{header}}
+
+			<div class="panel dpsgreen">
+				<div class="pd15"><button onclick="windowPubli()" class="btn-add fs20 back_green tommy_medium color_blue2 bornone pd5 br3">AÑADIR PUBLICACIÓN</button></div>
+				<div id="listado"></div>
+
+					<template id="publi">
+						<div class="container_publi">
+							<!-- <div class="icon_info"></div> -->
+							<div class="container_img">
+								<img class="img_publi" src="aaaaa" alt="">
+							</div>
+							<div class="container_data">
+								<button class="user tango bornone"></button>	
+								<div class="data-user">
+									<div class="content tango "></div>
+									<div class="fecha tango"></div>	
+								</div>							
+							</div> 
+						</div>
+					</template>	
+				<div class="window_user">
+					<a href="javascript:void(0)" class="close-btn-win-user color_yellow fs20" onclick="closeWindowUserPublis()">&times;</a>
+					
+					<div class="w100p dflex fdc aic jcspa h100p">
+						<div class="w100p h300"><img id="banner_user" class="banner" src="resources/img/plants/aloevera.jpg" alt=""></div>
+						<div class="mt200"><img id="avatar_user" class="user_image" src="resources/img/logo/logo.svg" alt=""></div>		
+
+						<div class="user_publis tango color_blue fs30 w100p dflex jcl aic pd15"></div>
+						<label class="w100p dflex jcl fs30 pd15 color_blue2 tango">Publicaciones</label>
+						<div class="list_publis_user h100p w100p dflex fxw jcl jccs pd5"></div>
+
+						<template id="user_publis">
+							<div class="container_publi_user ovh pr m15">
+								<div class="icon_info_user tango"></div>
+								<img class="img_publi_user h100p w100p" src="aaaaa" alt="">
+								<div class="container_info_user">
+									<div class="content_user back_blue2 color_yellow tango fs20 textorientcent"></div>
+									<div class="fecha_user back_blue2 color_yellow tango fs20 textorientcent pd15 br10"></div>
+								</div> 
+							</div>
+						</template>						
+					</div>
+				
+				</div>
+
+				<!-- Numero de Paginas -->
+				<div class="cant_pages">
+					<button id="btn__previus" class="btn-page tommy_medium fs20 color_blue2"><</button>
+					<div id="pages" class="m10sides color_green tango fs20"></div>
+					<button id="btn__next" class="btn-page tommy_medium fs20 color_blue2">></button>
+				</div>
+			</div>	
+			{{windowPubli}}
+
+		{{footer}}
+</body>
+<script src="resources/js/index.js"></script>
+<script src="resources/js/apiPublis.js"></script>
+</html>

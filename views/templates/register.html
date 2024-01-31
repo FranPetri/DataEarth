@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataEarth | Register</title>
+	<link rel="stylesheet" href="views/style/index.css">
+	<link rel="icon" href="resources/img/logo/logo.svg">
+</head>
+<body class="back_blue">
+	<div class="dflex fdc">
+		{{header}}
+		<div class="z5"><img class="w100vw pab tp10 z0" src="resources/img/wave.svg" alt=""></div>
+			<div class="w100vw dflex jcc aic z5 pd50">
+			<div class=" dpsgreen back_blue2 ws30vw w80vw br10 dflex fdc aic pd20">
+				<img class="h150" src="resources/img/logo/logo.svg" alt="">
+				<h2 class="tommy_medium color_yellow fss30 fs30 pd20 w100vw tac">Registrarse</h2>
+				<form method="post" class="dflex fdc aic w100vw">
+						<input class="w80p m5 pd5 br10 bornone back_green tango fs20 tac color_blue" type="text" name="nick" placeholder="Usuario" required>
+						<input class="w80p m5 pd5 br10 bornone back_green tango fs20 tac color_blue" type="text" name="email" placeholder="Email" required>
+						<input class="w80p m5 pd5 br10 bornone back_green tango fs20 tac color_blue" type="password" name="pass" placeholder="Contraseña" required>
+						<input class="bornone pd20 tango fss25 fs30 br10 m10 back_blue color_yellow" type="submit" name="btnAccept" value="Aceptar">
+				</form>
+				<div class="back_red color_yellow br10 tommy_medium fs20">
+					{{message}}
+				</div>
+			</div>
+		</div>	
+	</div>	
+	{{footer}}
+</body>
+</html>

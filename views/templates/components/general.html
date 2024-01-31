@@ -1,0 +1,90 @@
+<!-- Panel Ambiental ------------------------------------------------- -->
+<h1 class="pdtitle back_blue2 w100p dflex jcspb fdcs">
+	<div class="dflex aic">
+		<button id="btn_ambiental" class="fs30 color_blue2 br5 tango_bold pd5 bornone back_green h50" onclick="ambientalWin()">
+			Ambiental
+		</button>
+		<div class="dflex jcl aic fdcs w100p">
+			<div class="dflex aic pd15 jcl w100p">
+				<h2 class="color_green fs20 tommy_medium dflex aic pd5"> Humedad </h2>
+				<div id="hume_amb_stat" class="dflex aic tommy_medium fs20 pd5 color_green">00</div>
+			</div>
+			<div class="dflex aic pd15 jcl w100p">
+				<h2 class="color_green fs20 tommy_medium dflex aic pd5"> Temperatura </h2>
+				<div id="tmp_amb_stat" class="dflex aic tommy_medium fs20 pd5 color_green">00</div>
+			</div>	
+		</div>
+	</div>
+	<div class="dflex jcr aic tango color_yellow fs30 fs60ps pd15">
+		Ultimos registros del ambiente
+	</div>
+</h1>
+
+<div id="ambiental_panel" class="dflex h0 ovh fdc fwrap pd15 back_blue2">
+	<div class="dflex w100p jcspb">
+		<h2 class="tommy_medium fs30 color_green m15 w45p">Temperatura </h2>
+		<h2 class="tommy_medium fs30 color_green m15 w45p">Humedad </h2>
+	</div>
+	<div class="dflex h100p jcspb">			
+		<div class="back_green_s m15 w45p br5 pd15 tango dpschart">	
+			<canvas id="myChartTmp_Amb" class="border-debug"></canvas>
+		</div>
+		<div class="back_green_s m15 w45p br5 pd15 tango dpschart">	
+			<canvas id="myChartHume_Amb" class="border-debug"></canvas>
+		</div>
+	</div>	
+</div>
+
+
+<!-- Panel Terrenal ---------------------------------------------------- -->
+<h1 class="pdtitle back_green w100p dflex jcspb fdcs"> 
+	<div class="dflex aic">
+		<button id="btn_terrenal" class="fs30 color_tea br5 tango_bold pd5 bornone back_blue2 h50" onclick="terrenalWin()">Terrenal</button>
+		<div class="dflex jcl aic">
+			<div class="dflex aic pd15">
+				<h2 class="color_blue fs20 tommy_medium dflex aic pd5"> Humedad </h2>
+				<div id="hume_ter_stat" class="dflex aic tommy_medium fs20 pd5 color_blue">00</div>
+			</div>	
+		</div>
+	</div>	
+	<div class="dflex jcr aic tango color_blue2 fs30 fs60ps pd15">
+		Ultimos registros de la tierra
+	</div>
+</h1>
+
+<div id="terrenal_panel" class="dflex h0 ovh fdc fwrap pd15 back_green">
+	<div class="dflex w100p jcspb">
+		<h2 class="tommy_medium fs30 color_blue2 m15 w45p">Humedad </h2>
+	</div>
+	<div class="dflex h100p jcspb">			
+		<div class="back_blue_s m15 w45p br5 pd15 tango dpschart">	
+			<canvas id="myChartHume_Ter" class="border-debug"></canvas>
+		</div>
+	</div>	
+</div>
+
+<h1 class="pdtitle back_yellow w100p dflex jcspb fdcsb"> 
+	<div class="dflex aic">
+		<button id="btn_luz" class="fs30 color_yellow br5 tango_bold pd5 bornone back_blue2" onclick="luzWin()">Luz</button>
+		<div class="dflex jcl aic">
+			<div class="dflex aic pd15">
+				<h2 class="color_blue2 fs20 tommy_medium dflex aic pd5"> Luz </h2>
+				<div id="luz_stat_stat" class="dflex aic tommy_medium fs20 pd5 color_blue2">00</div>
+			</div>	
+		</div>	
+	</div>	
+	<div class="dflex jcr aic tango color_blue fs30 fs60ps pd15">
+		Ultimos registros de la luz de tu planta
+	</div>
+</h1>
+
+<div id="luz_panel" class="dflex h0 ovh fdc fwrap pd15 back_yellow mb20">
+	<div class="dflex w100p jcspb">
+		<h2 class="tommy_medium fs30 color_blue2 m15 w45p">Luz </h2>
+	</div>
+	<div class="dflex h100p jcspb">			
+		<div class="back_blue_s m15 w45p br5 pd15 tango dpschart">	
+			<canvas id="myChartLuz" class="border-debug"></canvas>
+		</div>
+	</div>	
+</div>
